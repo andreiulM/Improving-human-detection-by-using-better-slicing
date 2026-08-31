@@ -1,5 +1,5 @@
-Write-Host "Creating logs-26-august directory..."
-New-Item -ItemType Directory -Force -Path logs-26-august | Out-Null
+Write-Host "Creating evaluation-logs directory..."
+New-Item -ItemType Directory -Force -Path evaluation-logs | Out-Null
 
 .venv\Scripts\python.exe evaluate_pipeline.py --dataset wisard_dataset --split test --mode standard --model runs/detect/yolo26n_wisard_homogenous/weights/best.pt --conf 0.001 --summary-csv logs-26-august/benchmark_summary_conf0.001.csv
 .venv\Scripts\python.exe evaluate_pipeline.py --dataset wisard_dataset --split test --mode standard --model runs/detect/yolo26n_wisard_homogenous/weights/best.pt --conf 0.01 --summary-csv logs-26-august/benchmark_summary_conf0.01.csv
