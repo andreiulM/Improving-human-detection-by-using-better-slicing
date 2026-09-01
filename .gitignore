@@ -1,4 +1,5 @@
 .venv/
 __pycache__/
+*.cache
 wisard_dataset/
 wisard_dataset_sliced/
